@@ -546,6 +546,11 @@ a { color: inherit; text-decoration: none; }
     margin-bottom: 0.4rem;
 }
 
+.legal strong {
+    color: var(--ink);
+    font-weight: 600;
+}
+
 .legal a {
     color: var(--accent);
     font-weight: 500;

@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+
+{% block title %}Privacy Policy — Spendly{% endblock %}
+
+{% block content %}
+
+<section class="legal">
+    <div class="legal-inner">
+        <div class="legal-header">
+            <div class="hero-badge">Legal</div>
+            <h1 class="legal-title">Privacy Policy</h1>
+            <p class="legal-updated">Last updated: 6 October 2026</p>
+            <p class="legal-intro">
+                Spendly helps you track your personal spending. That means we
+                handle information about your money, and we take that
+                seriously. This policy explains what we collect, why we
+                collect it, and what we do with it.
+            </p>
+        </div>
+
+        <h2>1. Data We Collect</h2>
+        <p>We collect only what the service needs to work:</p>
+        <ul>
+            <li><strong>Account details</strong> — your name, email address and a
+                hashed version of your password. We never store your password
+                in plain text.</li>
+            <li><strong>Expense records</strong> — the amount, category, date and
+                description of each expense you enter.</li>
+            <li><strong>Session data</strong> — a cookie that keeps you signed in
+                while you use the service.</li>
+        </ul>
+        <p>
+            We do not connect to your bank, UPI apps or cards. Every expense
+            in Spendly is one you typed in yourself.
+        </p>
+
+        <h2>2. How We Use Your Data</h2>
+        <p>We use your information to:</p>
+        <ul>
+            <li>Create and secure your account, and let you sign in.</li>
+            <li>Store, display and summarise the expenses you record.</li>
+            <li>Show category breakdowns, totals and date-range filters.</li>
+            <li>Respond to support requests you send us.</li>
+        </ul>
+        <p>
+            We do not sell your data, use it for advertising, or build
+            profiles of you for anyone else.
+        </p>
+
+        <h2>3. Data Storage</h2>
+        <p>
+            Your data is stored in a database on the server that runs
+            Spendly. Access is limited to the people who operate the service,
+            and only for maintenance and support.
+        </p>
+        <p>
+            We keep your data for as long as your account is active. You can
+            delete individual expenses at any time. If you ask us to close
+            your account, we will delete your account details and expense
+            records within a reasonable period, unless the law requires us to
+            keep them longer.
+        </p>
+
+        <h2>4. Third Party Services</h2>
+        <p>
+            Spendly loads fonts from Google Fonts so that pages look
+            consistent across devices. When your browser requests those
+            fonts, Google may receive your IP address and standard request
+            information. No account or expense data is sent to Google.
+        </p>
+        <p>
+            Beyond this, we do not share your personal data with third
+            parties, except where required by law or to protect the rights
+            and safety of our users.
+        </p>
+
+        <h2>5. Your Rights</h2>
+        <p>You can at any time:</p>
+        <ul>
+            <li>View and edit the information in your account.</li>
+            <li>Delete any expense you have recorded.</li>
+            <li>Ask us for a copy of the data we hold about you.</li>
+            <li>Ask us to delete your account and all associated data.</li>
+        </ul>
+
+        <h2>6. Changes to This Policy</h2>
+        <p>
+            We may update this policy from time to time. When we do, we will
+            change the "Last updated" date at the top of this page and, for
+            significant changes, make reasonable efforts to notify you.
+        </p>
+
+        <h2>7. Contact Us</h2>
+        <p>
+            If you have any questions about this policy or how we handle your
+            data, email us at
+            <a href="mailto:privacy@spendly.app">privacy@spendly.app</a>.
+            You can also read our <a href="{{ url_for('terms') }}">Terms and Conditions</a>.
+        </p>
+    </div>
+</section>
+
+{% endblock %}
